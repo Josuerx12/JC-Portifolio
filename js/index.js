@@ -12,7 +12,6 @@ menuBtn.addEventListener('click', () => {
 menuMobileList.addEventListener('click', () => {
     menuBtn.classList.remove('fa-xmark')
     menuMobile.classList.toggle('on')
-    menuMobileList.classList.toggle('menu-active')
 })
 
 downCvBtn.addEventListener ('click', () => {

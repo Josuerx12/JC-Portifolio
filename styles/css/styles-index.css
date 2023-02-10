@@ -86,6 +86,12 @@ header {
   height: 20rem;
   margin: auto;
   border-radius: 30rem;
+  cursor: pointer;
+  box-shadow: 0px 0px 15px 1px #979eb3;
+}
+.content img:hover {
+  width: 22rem;
+  height: 22rem;
 }
 .content-history {
   width: 70rem;
