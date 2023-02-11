@@ -71,6 +71,37 @@ header {
   display: none;
 }
 
+.content {
+  min-width: 100vw;
+  min-height: 100vh;
+  height: 500px auto;
+  padding: 20rem 0 0 0;
+}
+.content-history {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #d6f3fa;
+}
+.content-history img {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 999px;
+  box-shadow: 0px 0px 15px 1px #979eb3;
+  cursor: pointer;
+}
+.content-history img:hover {
+  width: 22rem;
+  height: 22rem;
+}
+.content-history p {
+  max-width: 600px;
+  font-size: 2rem;
+  margin: 2rem 0 0 0;
+  text-align: justify;
+}
+
 @media (max-width: 942px) {
   html {
     font-size: 55%;
