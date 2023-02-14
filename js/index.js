@@ -19,6 +19,6 @@ downCvBtn.addEventListener ('click', () => {
 })
 
 hisBtn.addEventListener ('click', () => {
-    window.open ('../pages/sobre-mim.html', '_self')
+    window.open ('./pages/sobre-mim.html', '_self')
 })
 

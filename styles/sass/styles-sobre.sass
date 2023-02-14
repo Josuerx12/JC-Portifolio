@@ -60,7 +60,8 @@ header
         display: none
 
 .content
-    min-width: 100vw
+    width: fit-content
+    margin: auto
     min-height: 100vh
     height: 500px auto
     padding: 20rem 0 0 0
@@ -70,6 +71,15 @@ header
         align-items: center
         justify-content: center
         background: #d6f3fa
+        padding: 10rem
+        border-radius: variables.$btn-radius
+        h2
+            margin: 0 0 2rem 0
+            font-size: 3rem
+            font-weight: 900
+            text-align: center
+            color: variables.$menu-bg-color
+            cursor: default
         img
             width: 20rem
             height: 20rem
@@ -82,8 +92,189 @@ header
         p
             max-width: 600px
             font-size: 2rem
-            margin: 2rem 0 0 0
+            margin: 5rem 0 0 0
             text-align: justify
+            cursor: default
+            span
+                font-size: 2.2rem
+                font-weight: 700
+                cursor: pointer
+                transition: .2s
+                &:hover
+                    color: variables.$text-bold-color
+        h4
+            font-size: 3rem
+            text-align: center
+            color: variables.$menu-bg-color
+            margin: 5rem 0 1.5rem 0
+            cursor: default
+        .content-btns
+            display: flex
+            gap: 2rem
+            &-insta
+                button
+                    cursor: pointer
+                    font-size: 4rem
+                    background: linear-gradient(120deg, #405DE6, #5B51D8, #833AB4,#C13584, #E1306C, #FD1D1D, #F56040, #F77737, #FCAF45,#FFDC80)
+                    border-radius: variables.$btn-radius
+                    padding: .7rem
+                    color: #fff
+                    &:hover
+                        font-size: 5rem
+            &-git
+                button
+                    cursor: pointer
+                    font-size: 4rem
+                    padding: .7rem
+                    background: #383434
+                    color: #fff
+                    border-radius: variables.$btn-radius
+                    &:hover
+                        font-size: 5rem
+
+            &-linkedin
+                button
+                    cursor: pointer
+                    font-size: 4rem
+                    padding: .7rem
+                    background: #0e76a8
+                    color: #fff
+                    border-radius: variables.$btn-radius
+                    &:hover
+                        font-size: 5rem
+    .content-abilities
+        text-align: center
+        margin: 5rem auto
+        padding: 0 0 5rem 0
+        border-bottom: 1px solid #b9b9b9
+        border-top: 1px solid #b9b9b9
+        h3
+            margin: 3rem 0 1rem 0
+            font-size: 4rem
+            color: variables.$menu-bg-color
+            cursor: default
+        &-icons
+            display: flex
+            justify-content: center
+            align-items: center
+            flex-wrap: wrap
+            gap: 2rem
+            background: variables.$menu-bg-color
+            border-radius: variables.$btn-radius
+            width: fit-content
+            margin: auto
+            padding: 1rem 2rem
+            .fa-html5
+                background: linear-gradient(90deg, #e34c26, #f06529)
+                color: #ebebeb
+                font-size: 3.6rem
+                text-align: center
+                padding: 1rem
+            .fa-css3
+                background: linear-gradient(90deg, #264de4, #2965f1)
+                color: #ebebeb
+                font-size: 3.6rem
+                text-align: center
+                padding: 1rem
+            .fa-sass
+                background: #cc6699
+                color: #fff
+                font-size: 3.6rem
+                text-align: center
+                padding: 1rem
+            .fa-square-js
+                background: #323330
+                color: #F0DB4F
+                font-size: 3.6rem
+                text-align: center
+                padding: 1rem
+            .fa-github
+                background: #383434
+                color: #fff
+                font-size: 3.6rem
+                text-align: center
+                padding: 1rem
+            button
+                cursor: pointer
+                border-radius: variables.$btn-radius
+                &:hover
+                    font-size: 4.6rem
+    .projetos
+        h4
+        text-align: center
+        font-size: 4rem
+        font-weight: 700
+        color: variables.$menu-bg-color
+        cursor: default
+    .content-projects
+        display: flex
+        justify-content: space-between
+        align-items: center
+        flex-wrap: wrap
+        margin: 5rem auto
+        &-p1
+            text-align: center
+            h4
+                font-size: 2rem
+                font-weight: 600
+                color: variables.$text-color
+                cursor: default
+                margin: 3rem 0 1rem 0
+            img
+                max-width: 286px
+                max-height: 286px
+                border-radius: variables.$btn-radius
+                cursor: default
+                margin: 0 0 1rem 0
+            div
+                display: flex
+                flex-wrap: wrap
+                justify-content: center
+                gap: 2rem
+                align-items: center
+                button
+                    cursor: pointer
+                    font-size: 1.4rem
+                    font-weight: 600
+                    color: #fff
+                    padding: 1.2rem 1.6rem
+                    border-radius: variables.$btn-radius
+                    background: linear-gradient(90deg, variables.$menu-bg-color, variables.$logo-color)
+                    &:hover
+                        font-size: 1.6rem
+                        background: linear-gradient(90deg, variables.$logo-color, variables.$menu-bg-color)
+        &-p2
+            text-align: center
+            h4
+                font-size: 2rem
+                font-weight: 600
+                color: variables.$text-color
+                cursor: default
+                margin: 3rem 0 1rem 0
+            img
+                max-width: 286px
+                max-height: 286px
+                border-radius: variables.$btn-radius
+                cursor: default
+                margin: 0 0 1rem 0
+            div
+                display: flex
+                flex-wrap: wrap
+                justify-content: center
+                gap: 2rem
+                align-items: center
+                button
+                    cursor: pointer
+                    font-size: 1.4rem
+                    font-weight: 600
+                    color: #fff
+                    padding: 1.2rem 1.6rem
+                    border-radius: variables.$btn-radius
+                    background: linear-gradient(90deg, variables.$menu-bg-color, variables.$logo-color)
+                    &:hover
+                        font-size: 1.6rem
+                        background: linear-gradient(90deg, variables.$logo-color, variables.$menu-bg-color)
+
 @media (max-width: 942px)
     html
         font-size:55%
@@ -125,5 +316,11 @@ header
                         letter-spacing: .2rem
                         font-weight: 600
                         text-transform: uppercase
+    .content
+        &-history
+            margin: auto 2rem
+            padding: 3rem
+        .content-abilities
+            margin: auto 2rem
 .on
     left: 0

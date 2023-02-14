@@ -72,7 +72,8 @@ header {
 }
 
 .content {
-  min-width: 100vw;
+  width: fit-content;
+  margin: auto;
   min-height: 100vh;
   height: 500px auto;
   padding: 20rem 0 0 0;
@@ -83,6 +84,16 @@ header {
   align-items: center;
   justify-content: center;
   background: #d6f3fa;
+  padding: 10rem;
+  border-radius: 8px;
+}
+.content-history h2 {
+  margin: 0 0 2rem 0;
+  font-size: 3rem;
+  font-weight: 900;
+  text-align: center;
+  color: #007793;
+  cursor: default;
 }
 .content-history img {
   width: 20rem;
@@ -98,8 +109,217 @@ header {
 .content-history p {
   max-width: 600px;
   font-size: 2rem;
-  margin: 2rem 0 0 0;
+  margin: 5rem 0 0 0;
   text-align: justify;
+  cursor: default;
+}
+.content-history p span {
+  font-size: 2.2rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.content-history p span:hover {
+  color: #0098b5;
+}
+.content-history h4 {
+  font-size: 3rem;
+  text-align: center;
+  color: #007793;
+  margin: 5rem 0 1.5rem 0;
+  cursor: default;
+}
+.content-history .content-btns {
+  display: flex;
+  gap: 2rem;
+}
+.content-history .content-btns-insta button {
+  cursor: pointer;
+  font-size: 4rem;
+  background: linear-gradient(120deg, #405DE6, #5B51D8, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #F77737, #FCAF45, #FFDC80);
+  border-radius: 8px;
+  padding: 0.7rem;
+  color: #fff;
+}
+.content-history .content-btns-insta button:hover {
+  font-size: 5rem;
+}
+.content-history .content-btns-git button {
+  cursor: pointer;
+  font-size: 4rem;
+  padding: 0.7rem;
+  background: #383434;
+  color: #fff;
+  border-radius: 8px;
+}
+.content-history .content-btns-git button:hover {
+  font-size: 5rem;
+}
+.content-history .content-btns-linkedin button {
+  cursor: pointer;
+  font-size: 4rem;
+  padding: 0.7rem;
+  background: #0e76a8;
+  color: #fff;
+  border-radius: 8px;
+}
+.content-history .content-btns-linkedin button:hover {
+  font-size: 5rem;
+}
+.content .content-abilities {
+  text-align: center;
+  margin: 5rem auto;
+  padding: 0 0 5rem 0;
+  border-bottom: 1px solid #b9b9b9;
+  border-top: 1px solid #b9b9b9;
+}
+.content .content-abilities h3 {
+  margin: 3rem 0 1rem 0;
+  font-size: 4rem;
+  color: #007793;
+  cursor: default;
+}
+.content .content-abilities-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  background: #007793;
+  border-radius: 8px;
+  width: fit-content;
+  margin: auto;
+  padding: 1rem 2rem;
+}
+.content .content-abilities-icons .fa-html5 {
+  background: linear-gradient(90deg, #e34c26, #f06529);
+  color: #ebebeb;
+  font-size: 3.6rem;
+  text-align: center;
+  padding: 1rem;
+}
+.content .content-abilities-icons .fa-css3 {
+  background: linear-gradient(90deg, #264de4, #2965f1);
+  color: #ebebeb;
+  font-size: 3.6rem;
+  text-align: center;
+  padding: 1rem;
+}
+.content .content-abilities-icons .fa-sass {
+  background: #cc6699;
+  color: #fff;
+  font-size: 3.6rem;
+  text-align: center;
+  padding: 1rem;
+}
+.content .content-abilities-icons .fa-square-js {
+  background: #323330;
+  color: #F0DB4F;
+  font-size: 3.6rem;
+  text-align: center;
+  padding: 1rem;
+}
+.content .content-abilities-icons .fa-github {
+  background: #383434;
+  color: #fff;
+  font-size: 3.6rem;
+  text-align: center;
+  padding: 1rem;
+}
+.content .content-abilities-icons button {
+  cursor: pointer;
+  border-radius: 8px;
+}
+.content .content-abilities-icons button:hover {
+  font-size: 4.6rem;
+}
+.content .projetos {
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 700;
+  color: #007793;
+  cursor: default;
+}
+.content .content-projects {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 5rem auto;
+}
+.content .content-projects-p1 {
+  text-align: center;
+}
+.content .content-projects-p1 h4 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #007793;
+  cursor: default;
+  margin: 3rem 0 1rem 0;
+}
+.content .content-projects-p1 img {
+  max-width: 286px;
+  max-height: 286px;
+  border-radius: 8px;
+  cursor: default;
+  margin: 0 0 1rem 0;
+}
+.content .content-projects-p1 div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  align-items: center;
+}
+.content .content-projects-p1 div button {
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #fff;
+  padding: 1.2rem 1.6rem;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #007793, #60d6f4);
+}
+.content .content-projects-p1 div button:hover {
+  font-size: 1.6rem;
+  background: linear-gradient(90deg, #60d6f4, #007793);
+}
+.content .content-projects-p2 {
+  text-align: center;
+}
+.content .content-projects-p2 h4 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #007793;
+  cursor: default;
+  margin: 3rem 0 1rem 0;
+}
+.content .content-projects-p2 img {
+  max-width: 286px;
+  max-height: 286px;
+  border-radius: 8px;
+  cursor: default;
+  margin: 0 0 1rem 0;
+}
+.content .content-projects-p2 div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  align-items: center;
+}
+.content .content-projects-p2 div button {
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #fff;
+  padding: 1.2rem 1.6rem;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #007793, #60d6f4);
+}
+.content .content-projects-p2 div button:hover {
+  font-size: 1.6rem;
+  background: linear-gradient(90deg, #60d6f4, #007793);
 }
 
 @media (max-width: 942px) {
@@ -147,6 +367,13 @@ header {
     letter-spacing: 0.2rem;
     font-weight: 600;
     text-transform: uppercase;
+  }
+  .content-history {
+    margin: auto 2rem;
+    padding: 3rem;
+  }
+  .content .content-abilities {
+    margin: auto 2rem;
   }
 }
 .on {
