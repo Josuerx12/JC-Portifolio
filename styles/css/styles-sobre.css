@@ -241,10 +241,12 @@ header {
   cursor: default;
 }
 .content .content-projects {
+  width: 80%;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
+  gap: 5rem;
   margin: 5rem auto;
 }
 .content .content-projects-p1 {
@@ -292,7 +294,7 @@ header {
   font-weight: 600;
   color: #007793;
   cursor: default;
-  margin: 3rem 0 1rem 0;
+  margin: 0 0 1rem 0;
 }
 .content .content-projects-p2 img {
   max-width: 286px;
@@ -321,10 +323,50 @@ header {
   font-size: 1.6rem;
   background: linear-gradient(90deg, #60d6f4, #007793);
 }
+.content .content-projects-p3 {
+  text-align: center;
+}
+.content .content-projects-p3 h4 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #007793;
+  cursor: default;
+  margin: 0 0 1rem 0;
+}
+.content .content-projects-p3 img {
+  max-width: 286px;
+  max-height: 286px;
+  border-radius: 8px;
+  cursor: default;
+  margin: 0 0 1rem 0;
+}
+.content .content-projects-p3 div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  align-items: center;
+}
+.content .content-projects-p3 div button {
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #fff;
+  padding: 1.2rem 1.6rem;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #007793, #60d6f4);
+}
+.content .content-projects-p3 div button:hover {
+  font-size: 1.6rem;
+  background: linear-gradient(90deg, #60d6f4, #007793);
+}
 
-@media (max-width: 942px) {
+@media (max-width: 1009px) {
   html {
     font-size: 55%;
+  }
+  .content-history {
+    margin: auto 2rem;
   }
 }
 @media (max-width: 836px) {
@@ -373,7 +415,7 @@ header {
     padding: 3rem;
   }
   .content .content-abilities {
-    margin: auto 2rem;
+    margin: 5rem 2rem;
   }
 }
 .on {
